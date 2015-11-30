@@ -1,12 +1,7 @@
 package Catalyst::Plugin::VersionedURI;
-BEGIN {
-  $Catalyst::Plugin::VersionedURI::AUTHORITY = 'cpan:yanick';
-}
-BEGIN {
-  $Catalyst::Plugin::VersionedURI::VERSION = '1.1.1';
-}
+our $AUTHORITY = 'cpan:YANICK';
 # ABSTRACT: add version component to uris
-
+$Catalyst::Plugin::VersionedURI::VERSION = '1.1.2';
 
 use 5.10.0;
 
@@ -15,7 +10,7 @@ use warnings;
 
 use Moose::Role;
 use URI::QueryParam;
-use Path::Class;
+use Path::Tiny;
 
 our @uris;
 
@@ -73,7 +68,7 @@ sub uri_version {
         [ $self->config->{root} ];
 
     # Return/cache the file's mtime
-    for my $path ( map { file( $_, $file ) } @$include_paths ) {
+    for my $path ( map { path( $_, $file ) } @$include_paths ) {
         return $cache{$uri} = $path->stat->mtime if -f $path;
     }
 
@@ -110,9 +105,11 @@ around uri_for => sub {
 
 1;
 
-
 __END__
+
 =pod
+
+=encoding UTF-8
 
 =head1 NAME
 
@@ -120,7 +117,7 @@ Catalyst::Plugin::VersionedURI - add version component to uris
 
 =head1 VERSION
 
-version 1.1.1
+version 1.1.2
 
 =head1 SYNOPSIS
 
@@ -262,4 +259,3 @@ This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
-

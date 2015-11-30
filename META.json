@@ -4,7 +4,7 @@
       "Yanick Champoux <yanick@babyl.dyndns.org>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.102345, CPAN::Meta::Converter version 2.101590",
+   "generated_by" : "Dist::Zilla version 5.040, CPAN::Meta::Converter version 2.150001",
    "license" : [
       "perl_5"
    ],
@@ -14,61 +14,74 @@
    },
    "name" : "Catalyst-Plugin-VersionedURI",
    "prereqs" : {
-      "build" : {
-         "requires" : {
-            "Module::Build" : "0.3601"
-         }
-      },
       "configure" : {
          "requires" : {
-            "Module::Build" : "0.3601"
+            "ExtUtils::MakeMaker" : "0"
+         }
+      },
+      "develop" : {
+         "requires" : {
+            "Test::More" : "0.96",
+            "Test::PAUSE::Permissions" : "0",
+            "Test::Vars" : "0"
          }
       },
       "runtime" : {
          "requires" : {
-            "Catalyst::Controller" : 0,
-            "Moose" : 0,
-            "Moose::Role" : 0,
-            "Path::Class" : 0,
-            "URI::QueryParam" : 0,
-            "perl" : "v5.10.0"
+            "Catalyst::Controller" : "0",
+            "Catalyst::DispatchType::Regex" : "0",
+            "Moose" : "0",
+            "Moose::Role" : "0",
+            "Path::Tiny" : "0",
+            "URI::QueryParam" : "0",
+            "perl" : "v5.10.0",
+            "strict" : "0",
+            "warnings" : "0"
          }
       },
       "test" : {
+         "recommends" : {
+            "CPAN::Meta" : "2.120900"
+         },
          "requires" : {
-            "Carp" : 0,
-            "Catalyst" : 0,
-            "Scalar::Util" : 0,
-            "Test::More" : "0.94",
-            "Test::WWW::Mechanize::Catalyst" : 0,
-            "parent" : 0
+            "Catalyst" : "0",
+            "ExtUtils::MakeMaker" : "0",
+            "File::Spec" : "0",
+            "IO::Handle" : "0",
+            "IPC::Open3" : "0",
+            "Test::More" : "0",
+            "Test::WWW::Mechanize::Catalyst" : "0",
+            "lib" : "0",
+            "parent" : "0"
          }
       }
    },
    "provides" : {
       "Catalyst::Controller::VersionedURI" : {
          "file" : "lib/Catalyst/Controller/VersionedURI.pm",
-         "version" : "v1.1.1"
+         "version" : "v1.1.2"
       },
       "Catalyst::Plugin::VersionedURI" : {
          "file" : "lib/Catalyst/Plugin/VersionedURI.pm",
-         "version" : "v1.1.1"
+         "version" : "v1.1.2"
       }
    },
    "release_status" : "stable",
    "resources" : {
       "bugtracker" : {
-         "mailto" : "bug-catalyst-plugin-versioneduri at rt.cpan.org",
-         "web" : "http://rt.cpan.org/Public/Dist/Display.html?Name=Catalyst-Plugin-VersionedURI"
+         "web" : "https://github.com/yanick/Catalyst-Plugin-VersionedURI/issues"
       },
-      "homepage" : "http://search.cpan.org/dist/Catalyst-Plugin-VersionedURI/",
+      "homepage" : "https://github.com/yanick/Catalyst-Plugin-VersionedURI",
       "repository" : {
          "type" : "git",
-         "url" : "git://github.com/yanick/Catalyst-Plugin-VersionedURI.git",
-         "web" : "http://github.com/yanick/Catalyst-Plugin-VersionedURI/tree"
+         "url" : "https://github.com/yanick/Catalyst-Plugin-VersionedURI.git",
+         "web" : "https://github.com/yanick/Catalyst-Plugin-VersionedURI"
       }
    },
-   "version" : "1.1.1",
-   "x_authority" : "cpan:yanick"
+   "version" : "1.1.2",
+   "x_author_pledge" : {
+      "version" : 1
+   },
+   "x_authority" : "cpan:YANICK"
 }
 

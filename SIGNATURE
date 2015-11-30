@@ -1,5 +1,5 @@
 This file contains message digests of all files listed in MANIFEST,
-signed via the Module::Signature module, version 0.64.
+signed via the Module::Signature module, version 0.79.
 
 To verify the content in this distribution, first make sure you have
 Module::Signature installed, then type:
@@ -14,18 +14,23 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 4b96972f725c4ba767d47871ff406793f8fd3911 Build.PL
-SHA1 80eebdc46b6e12569f90a7f14a27d0eb83567041 Changes
-SHA1 3f078f222ef8f7bf533f1a02bec51ab9977c0d1c INSTALL
-SHA1 59da7efc4d54fec3810ae9f44a59eb3ee7139957 LICENSE
-SHA1 fedb8f9840b00cd49fec538b3f3cb246f01e9a4d MANIFEST
-SHA1 7b063de6970f84b56b127e4e8ec5375adc15df01 META.json
-SHA1 268511d23b30fbfb5b09f4b83aa0ba069fcabc99 META.yml
-SHA1 197f0f107d826476cc45b5ac8a504d843e2d09e2 README
-SHA1 f9f5c35e8831ff49d088b91b3c6b88f7d7c48754 README.mkdn
-SHA1 5e96fb44592086dc7d10ccbef30c29b4c85911a2 lib/Catalyst/Controller/VersionedURI.pm
-SHA1 8b3ad69469c5af49f9389b709dd4eabe08c62806 lib/Catalyst/Plugin/VersionedURI.pm
-SHA1 050aa113e828a52db3c86065c0c0ed50198b7ce8 t/000-report-versions.t
+SHA1 63e70ed0429a982ddc3d1c52dd1117fde27fa043 AUTHOR_PLEDGE
+SHA1 8957d0fadac36bea17375e431600bed9a8f5d08a Changes
+SHA1 50e5bf8e8f3b70082780677b526011a6b000243c INSTALL
+SHA1 07ecfd17dea4597853e604be99039f63a11a49b7 LICENSE
+SHA1 583d41d6288d586911ffb8e406c6595d35358fe3 MANIFEST
+SHA1 f3ffbf2665e9541254458330569342a0dc92e524 META.json
+SHA1 4d3f5125d8b88191e158dfa1987f2854cfcf193f META.yml
+SHA1 ffe05a4232321dbe2634d7dc7a3c43e1eb5ba934 Makefile.PL
+SHA1 2db298886c2be41e0b7ad71ef9e8bfadc400554a README
+SHA1 3abf9ca703a9517bbd72d2b7f820e05fc972a89f README.mkdn
+SHA1 1185debc7c2e6f25bff228638f40748c5516a430 cpanfile
+SHA1 f4ba40ed67977519a88337839cc996f7d3309bda doap.xml
+SHA1 fbec7d3e8e9c936b34af20e90b5cd0732698618c lib/Catalyst/Controller/VersionedURI.pm
+SHA1 5e321360b3682d5408926abe42f82d4bbe3491ff lib/Catalyst/Plugin/VersionedURI.pm
+SHA1 3da73d6dea608883ad5c4d89331006ac777df042 t/00-compile.t
+SHA1 62379f7c8b2ecff498295ac194f98fc37fdbe282 t/00-report-prereqs.dd
+SHA1 504a672015f8761f5bad3863d844954c9e803c3f t/00-report-prereqs.t
 SHA1 3e140cfd0ffc670a2c2d6b9fdd190a789ed30cf5 t/basic.t
 SHA1 eccecd5dac8c99bc6325596d0061accdc71f2bd0 t/in_path.t
 SHA1 29322b464803b97221a34cbc05a839badfd03619 t/lib/BasicApp.pm
@@ -39,10 +44,12 @@ SHA1 f5002edcde8c5779419e9536c1e8734d3c5fd16d t/lib/TestApp.pm
 SHA1 026cbb4a1208cc1c8db3a65f0cb2166dee0d85d7 t/lib/TestApp/Controller/Root.pm
 SHA1 498ac5410036150d9daeb47b585e375baaa379c0 t/mtime.t
 SHA1 b95d109961ccd284635aa69faeae54acb8a57bec t/param.t
+SHA1 80ab1faf5d8174920b60461bf8c11e2225861f42 xt/release/pause-permissions.t
+SHA1 d1fe7d94b3edc7847eb187d4ee41f66e19cf8907 xt/release/unused-vars.t
 -----BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.11 (GNU/Linux)
+Version: GnuPG v1
 
-iEYEARECAAYFAk5cIqgACgkQ34Hwf+GwC4w09gCfe3yAYM22vQ0CL+QU7/2RKFBl
-FyUAoIq4kIsIO6crREUdIbNKkTXNKRw2
-=lyIX
+iEYEARECAAYFAlZbm00ACgkQ34Hwf+GwC4zT5QCfRHCuOUysoX1DDkFlfYfCb6DB
+tusAoIx7WIKs3YAPU6uPXEmbxsvHa9OG
+=FJPA
 -----END PGP SIGNATURE-----

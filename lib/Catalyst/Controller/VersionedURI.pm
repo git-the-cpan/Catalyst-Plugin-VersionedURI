@@ -1,17 +1,14 @@
 package Catalyst::Controller::VersionedURI;
-BEGIN {
-  $Catalyst::Controller::VersionedURI::AUTHORITY = 'cpan:yanick';
-}
-BEGIN {
-  $Catalyst::Controller::VersionedURI::VERSION = '1.1.1';
-}
+our $AUTHORITY = 'cpan:YANICK';
 # ABSTRACT: Revert Catalyst::Plugin::VersionedURI's munging
-
+$Catalyst::Controller::VersionedURI::VERSION = '1.1.2';
 
 use strict;
 use warnings;
 
 use Moose;
+
+use Catalyst::DispatchType::Regex;
 
 BEGIN { extends 'Catalyst::Controller' }
 
@@ -40,7 +37,10 @@ END
 1;
 
 __END__
+
 =pod
+
+=encoding UTF-8
 
 =head1 NAME
 
@@ -48,7 +48,7 @@ Catalyst::Controller::VersionedURI - Revert Catalyst::Plugin::VersionedURI's mun
 
 =head1 VERSION
 
-version 1.1.1
+version 1.1.2
 
 =head1 SYNOPSIS
 
@@ -80,4 +80,3 @@ This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
-
